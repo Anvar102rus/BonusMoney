@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int ClientAccount = 100;
-        int ReplenishmentAmount = 1000;
-        int DepositAmountToReceiveAbonus = 100;
+        int clientAccount = 100;
+        int replenishmentAmount = 1000;
+        int depositAmountToReceiveAbonus = 100;
 
         int bonus;
-        if (ReplenishmentAmount >= 1000) {
-            bonus = ReplenishmentAmount/DepositAmountToReceiveAbonus ;
+        if (replenishmentAmount >= 1000) {
+            bonus = replenishmentAmount/depositAmountToReceiveAbonus ;
         } else {
             bonus = 0;
         }
-         int Total = ClientAccount+ReplenishmentAmount+bonus;
+         int Total = clientAccount+replenishmentAmount+bonus;
 
         System.out.println(Total);
         System.out.println(bonus);
